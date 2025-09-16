@@ -1,0 +1,129 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - request_inquiry
+  - nlu_fallback
+  - inform_name
+  - inform_email
+  - ask_fees
+  - ask_prerequisites
+  - ask_curriculum
+  - ask_duration
+  - ask_deadline
+  - ask_hostel_facility
+  - ask_department_head
+  - ask_courses
+  - bot_challenge
+  - ask_bot_info
+  - ask_department_info
+  - ask_hostel_facilities
+  - provide_department
+  - ask_about_architecture
+  - ask_eligibility
+
+entities:
+  - course_name
+  - user_name
+  - user_email
+
+slots:
+  course_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: course_name
+  user_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: user_name
+    - type: from_text
+      intent: inform_name
+      not_intent: deny
+  user_email:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: user_email
+    - type: from_text
+      intent: inform_email
+      not_intent: deny
+  inquiry_course:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: course_name
+
+responses:
+  utter_greet:
+  - text: "Hello! Welcome to our B.Tech admission chatbot. How can I help you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Feel free to ask if you have more questions."
+
+  utter_bot_architecture:
+  - text: "I'm a Rasa-based chatbot using natural language processing and machine learning."
+
+  utter_ask_department_specification:
+  - text: "Which department would you like information about? (e.g., Computer Science, Electrical, Mechanical, etc.)"
+
+  utter_hostel_facilities_department:
+  - text: "For {course_name} department students, the hostel facilities include WiFi, air-conditioned rooms, high-speed internet, common study rooms, and 24/7 security."
+
+  utter_hostel_facilities_general:
+  - text: "Our hostels provide various facilities including WiFi, laundry, common rooms, and 24/7 security."
+
+  utter_prerequisites:
+  - text: "For B.Tech programs, you need 12th grade with Physics, Chemistry, Mathematics and minimum 60% marks."
+
+  utter_curriculum_info:
+  - text: "The B.Tech curriculum includes core engineering subjects, practical labs, projects, and industry training across 8 semesters."
+
+  utter_duration_info:
+  - text: "B.Tech is a 4-year undergraduate program divided into 8 semesters."
+
+  utter_deadline_info:
+  - text: "Admission deadlines are usually in May-June. Please check our website for current dates."
+
+  utter_hostel_info:
+  - text: "We have hostel facilities with WiFi, laundry, common rooms, mess, and 24/7 security."
+
+  utter_courses_info:
+  - text: "We offer B.Tech in Computer Science, Electrical, Mechanical, Civil, Electronics, and Chemical Engineering."
+
+  utter_ask_user_name:
+  - text: "May I know your name for the inquiry?"
+
+  utter_ask_user_email:
+  - text: "Please provide your email address for more information."
+
+  utter_ask_inquiry_course:
+  - text: "Which course are you interested in?"
+
+  utter_submit_inquiry:
+  - text: "Thank you! Your inquiry has been submitted. We'll contact you soon."
+
+  utter_invalid_email:
+  - text: "Please provide a valid email address."
+
+  utter_eligibility_info:
+  - text: "To be eligible, you need a 10+2 with Physics, Chemistry, and Math with a minimum of 75% aggregate and a valid JEE Main score."
+
+actions:
+  - action_show_fees
+  - action_fallback_knowledge_base
+  - action_show_department_info
+  - action_show_eligibility
+  - action_handle_name_response
+  - action_handle_email_response
+
+# REMOVED THE FORM TO PREVENT CONFLICTS:
+# forms:
+#   admission_inquiry_form:
+#     required_slots: [user_name, user_email, inquiry_course]
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

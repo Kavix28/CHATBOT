@@ -1,0 +1,78 @@
+=== B.Tech Computer Science ===
+The Computer Science and Engineering (CSE) program is a 4-year undergraduate degree focused on algorithms, data structures, artificial intelligence, and software development. The head of the department is Dr. Anjali Sharma (email: hod.cse@university.edu, phone: +91-XXXXX-XXXXX). The program offers specializations in Cybersecurity, Data Science, Artificial Intelligence, and Cloud Computing. Core programming languages taught include Python, Java, C++, and JavaScript. The department has 12 specialized labs including AI Lab, Networking Lab, and Software Development Lab. Average placement package: ₹8-12 LPA. Top recruiters: Google, Microsoft, Amazon, Infosys, TCS.
+
+=== B.Tech Mechanical Engineering ===
+Keywords: michanical, mechinical, mech eng
+The Mechanical Engineering program is a 4-year degree led by Dr. Raj Singh (email: hod.mech@university.edu). The curriculum covers thermodynamics, fluid mechanics, robotics, automotive engineering, and manufacturing processes. Students get hands-on experience in our state-of-the-art labs including CAD/CAM Lab, Robotics Lab, and Thermal Engineering Lab. Final year students work on industry-sponsored capstone projects. Specializations available: Automotive Engineering, Robotics, Thermal Engineering. Average placement package: ₹6-9 LPA. Top recruiters: Tata Motors, Mahindra, L&T, Siemens.
+
+=== B.Tech Electrical Engineering ===
+The Electrical Engineering program is headed by Dr. Priya Mehta. The program focuses on power systems, control systems, electronics, and renewable energy technologies. Specializations include Power Systems, Control & Automation, and Electronics Engineering. The department has advanced labs for Power Electronics, High Voltage Engineering, and Embedded Systems. Industry collaborations with BHEL, Siemens, and ABB.
+
+=== B.Tech Civil Engineering ===
+The Civil Engineering program under Dr. Sanjay Kumar covers structural engineering, transportation engineering, geotechnical engineering, and environmental engineering. The department has modern labs for Concrete Technology, Surveying, and Environmental Engineering. Students participate in infrastructure projects and site visits. Specializations: Structural Engineering, Transportation Engineering.
+
+=== B.Tech Biotechnology ===
+The Biotechnology program led by Dr. Neha Sharma combines biology with technology. The curriculum includes genetic engineering, bioinformatics, pharmaceutical biotechnology, and industrial biotechnology. The department has well-equipped labs for Microbiology, Molecular Biology, and Fermentation Technology. Research areas: Drug Discovery, Agricultural Biotechnology, Environmental Biotechnology.
+
+=== Admission Process ===
+Eligibility: 10+2 with Physics, Chemistry, and Mathematics with minimum 75% aggregate. Entrance Exam: JEE Main score accepted. Application Deadline: August 31st. Application Fee: ₹1500. Required Documents: 10th/12th marksheets, JEE scorecard, ID proof, passport photos. Selection Process: Merit-based on JEE scores followed by counseling.
+
+=== Fee Structure ===
+Computer Science: ₹1,50,000 per year
+Mechanical Engineering: ₹1,25,000 per year
+Electrical Engineering: ₹1,25,000 per year
+Civil Engineering: ₹1,20,000 per year
+Biotechnology: ₹1,40,000 per year
+Additional one-time charges: Registration fee ₹10,000, Security deposit ₹15,000 (refundable)
+
+=== Scholarship Programs ===
+Merit Scholarship: 100% fee waiver for JEE rank < 5000
+Merit Scholarship: 50% fee waiver for JEE rank 5001-15000
+Need-based Scholarship: Up to 25% fee waiver based on family income
+Sports Scholarship: For national level players
+Special scholarships for female students: 10% fee waiver
+
+=== Hostel Facilities ===
+The university provides separate hostels for boys and girls with 24/7 security, CCTV surveillance, and wardens. All rooms are triple-sharing with attached bathroom, study table, wardrobe, and high-speed Wi-Fi (100 Mbps). Common facilities: TV lounge, reading room, gym, indoor games. Mess serves vegetarian meals (breakfast, lunch, dinner). Annual hostel fee: ₹60,000 (includes mess charges). Additional: Laundry service ₹2000/year, Medical facility available 24/7.
+
+=== Campus Infrastructure ===
+Campus area: 50 acres. Central library with 1,00,000+ books and online journals. 15+ advanced laboratories. Auditorium with 1000 capacity. Sports facilities: Basketball court, football ground, cricket ground, tennis court, swimming pool. Medical center with full-time doctor and ambulance. Cafeteria and food court. Bank ATM and post office on campus.
+
+=== Campus Life and Clubs ===
+Our campus has a vibrant community with over 20 student-run clubs. Technical clubs: Robotics Club, Coding Society, IEEE Student Chapter. Cultural clubs: Drama Club, Music Club, Dance Club, Photography Club. Other clubs: Entrepreneurship Cell, Literary Society, Eco Club. Annual events: Tech fest 'Innovatia' (March), Cultural fest 'Utsav' (October), Sports meet (January). Industry interaction programs and guest lectures every month.
+
+=== Placement Statistics ===
+Overall placement rate: 92%. Highest package: ₹42 LPA (Google). Average package: ₹8 LPA. 100+ companies visit campus including Microsoft, Amazon, Adobe, Goldman Sachs, Tata Group, L&T, Infosys, Wipro. Training and placement cell provides resume building, mock interviews, and soft skills training. Internship opportunities available from 3rd year.
+
+=== Contact Information ===
+Admission Office: Phone: +91-XXXXX-XXXXX, Email: admissions@university.edu
+Website: www.university.edu
+Address: University Campus, Education City, Mumbai, Maharashtra 400001
+Office hours: Monday-Saturday, 9:00 AM to 5:00 PM
+Campus tour available on weekends by appointment
+
+
+
+=== Admission Deadlines ===
+The admission process usually starts in May and ends by June 30th. Application deadlines vary by course, so please check our official website for specific dates. Late applications may be considered subject to seat availability.
+
+=== Curriculum Structure ===
+Our B.Tech program follows a 4-year structure with 8 semesters. The curriculum includes core subjects, electives, laboratory sessions, and a final year project. Each semester has approximately 5-6 subjects with both theoretical and practical components.
+
+=== Hostel Facilities ===
+We provide separate hostel facilities for boys and girls with 24/7 security. Facilities include WiFi, common rooms, mess facilities, laundry services, and sports areas. Hostel fees are approximately ₹50,000 per semester including meals.
+
+=== Prerequisites ===
+For B.Tech admissions, candidates must have completed 12th grade with Physics, Chemistry, and Mathematics. Minimum percentage requirements vary by course but generally start at 60% aggregate. Entrance exam scores are also considered.
+
+=== Scholarship Opportunities ===
+We offer merit-based scholarships for top performers in entrance exams and board examinations. Need-based scholarships are also available. Applications for scholarships should be submitted along with the admission form.
+
+=== Placement Statistics ===
+Our placement record shows over 90% of students get placed each year. Top recruiters include Google, Microsoft, Amazon, TCS, and Infosys. Average package ranges from ₹6-15 LPA depending on the course.
+
+=== Internship Opportunities ===
+Students undergo mandatory internships in their 3rd and 4th years. We have tie-ups with over 100 companies for summer internships and industrial training programs.
+
+=== Library Resources ===
+Our central library has over 50,000 books, 100+ journals, and online access to IEEE, Springer, and other digital resources. Students can borrow up to 4 books for 15 days.

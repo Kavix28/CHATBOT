@@ -1,0 +1,19 @@
+# This file contains the endpoints for the services which your bot is using.
+# https://rasa.com/docs/rasa/model-training
+
+# Server for the custom actions
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store which saves conversations to a database
+tracker_store:
+  type: SQL
+  dialect: sqlite
+  db: conversations.db
+
+# Event broker which all services connect to
+event_broker:
+#  url: localhost
+#  username: username
+#  password: password
+#  queue: queue
