@@ -1,0 +1,104 @@
+version: "3.1"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Handle bot questions
+    steps:
+      - intent: ask_bot_info
+      - action: utter_bot_architecture
+  
+  - rule: Handle bot architecture questions
+    steps:
+      - intent: ask_about_architecture
+      - action: utter_bot_architecture
+
+  - rule: Fallback to knowledge base
+    steps:
+      - intent: nlu_fallback
+      - action: action_fallback_knowledge_base
+
+  - rule: Handle prerequisites questions
+    steps:
+      - intent: ask_prerequisites
+      - action: utter_prerequisites
+
+  - rule: Handle curriculum questions
+    steps:
+      - intent: ask_curriculum
+      - action: utter_curriculum_info
+
+  - rule: Handle duration questions
+    steps:
+      - intent: ask_duration
+      - action: utter_duration_info
+
+  - rule: Handle deadline questions
+    steps:
+      - intent: ask_deadline
+      - action: utter_deadline_info
+
+  - rule: Handle courses questions
+    steps:
+      - intent: ask_courses
+      - action: utter_courses_info
+
+  - rule: Handle bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_architecture
+
+  - rule: Handle department head questions
+    steps:
+      - intent: ask_department_head
+      - action: action_show_department_info
+
+  - rule: Handle fee questions
+    steps:
+      - intent: ask_fees
+      - action: utter_ask_inquiry_course
+      - action: action_show_fees
+
+  - rule: Handle inquiry requests
+    steps:
+      - intent: request_inquiry
+      - action: utter_ask_user_name
+
+  - rule: Handle hostel with department
+    steps:
+      - intent: ask_hostel_facilities
+        entities:
+          - course_name
+      - action: utter_hostel_facilities_department
+  
+  - rule: Handle eligibility with department
+    steps:
+      - intent: ask_eligibility
+        entities:
+          - course_name
+      - action: action_show_eligibility
+
+  - rule: Handle hostel availability questions
+    steps:
+      - intent: ask_hostel_facility
+      - action: utter_hostel_info
+  
+  - rule: Handle department head questions with entity
+    steps:
+      - intent: ask_department_head
+        entities:
+         - course_name
+      - action: action_show_department_info
+
+  - rule: Handle department head questions without entity
+    steps:
+      - intent: ask_department_head
+      - action: utter_ask_department_specification

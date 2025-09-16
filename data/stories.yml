@@ -1,0 +1,335 @@
+version: "3.1"
+
+stories:
+- story: department information flow with entity
+  steps:
+  - intent: ask_department_info
+    entities:
+    - course_name: electrical
+  - action: action_show_department_info
+
+- story: department information without entity - ask for clarification
+  steps:
+  - intent: ask_department_info
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: computer science
+  - action: action_show_department_info
+
+- story: eligibility inquiry with department
+  steps:
+  - intent: ask_eligibility
+    entities:
+    - course_name: computer science
+  - action: action_show_eligibility
+
+- story: eligibility inquiry without department
+  steps:
+  - intent: ask_eligibility
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: computer science
+  - action: action_show_eligibility
+
+- story: greet and ask department with entity
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_department_info
+    entities:
+    - course_name: mechanical
+  - action: action_show_department_info
+
+- story: greet and ask department without entity
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_department_info
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: civil
+  - action: action_show_department_info
+
+- story: multiple department queries in sequence
+  steps:
+  - intent: ask_department_info
+    entities:
+    - course_name: electrical
+  - action: action_show_department_info
+  - intent: ask_department_info
+    entities:
+    - course_name: computer science
+  - action: action_show_department_info
+  - intent: ask_department_info
+    entities:
+    - course_name: mechanical
+  - action: action_show_department_info
+
+- story: user provides department after clarification
+  steps:
+  - intent: ask_department_info
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: electronics
+  - action: action_show_department_info
+
+- story: user changes department mid-conversation
+  steps:
+  - intent: ask_department_info
+    entities:
+    - course_name: electrical
+  - action: action_show_department_info
+  - intent: ask_department_info
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: computer science
+  - action: action_show_department_info
+
+- story: user asks about unknown department then corrects
+  steps:
+  - intent: ask_department_info
+    entities:
+    - course_name: unknown_department
+  - action: action_show_department_info
+  - intent: ask_department_info
+    entities:
+    - course_name: electrical
+  - action: action_show_department_info
+
+- story: user provides department without being asked
+  steps:
+  - intent: provide_department
+    entities:
+    - course_name: electrical
+  - action: action_show_department_info
+
+- story: user asks about hostel after department info
+  steps:
+  - intent: ask_department_info
+    entities:
+    - course_name: computer science
+  - action: action_show_department_info
+  - intent: ask_hostel_facilities
+  - action: utter_hostel_facilities_general
+
+- story: hostel facilities with department entity
+  steps:
+  - intent: ask_hostel_facilities
+    entities:
+    - course_name: computer science
+  - action: utter_hostel_facilities_department
+
+- story: hostel facilities without department - ask clarification
+  steps:
+  - intent: ask_hostel_facilities
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: mechanical
+  - action: utter_hostel_facilities_department
+
+- story: general hostel availability inquiry
+  steps:
+  - intent: ask_hostel_facility
+  - action: utter_hostel_info
+
+- story: handle bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_architecture
+
+- story: handle courses inquiry
+  steps:
+  - intent: ask_courses
+  - action: utter_courses_info
+
+- story: handle prerequisites inquiry
+  steps:
+  - intent: ask_prerequisites
+  - action: utter_prerequisites
+
+- story: handle curriculum inquiry
+  steps:
+  - intent: ask_curriculum
+  - action: utter_curriculum_info
+
+- story: handle duration inquiry
+  steps:
+  - intent: ask_duration
+  - action: utter_duration_info
+
+- story: handle deadline inquiry
+  steps:
+  - intent: ask_deadline
+  - action: utter_deadline_info
+
+- story: handle invalid email
+  steps:
+  - intent: inform_email
+  - action: action_handle_email_response
+  - action: utter_invalid_email
+  - intent: inform_email
+    entities:
+    - user_email: test@example.com
+  - action: action_handle_email_response
+  - action: utter_submit_inquiry
+
+- story: handle eligibility with department entity
+  steps:
+  - intent: ask_eligibility
+    entities:
+    - course_name: computer science
+  - action: action_show_eligibility
+
+- story: handle eligibility without department
+  steps:
+  - intent: ask_eligibility
+  - action: utter_ask_department_specification
+  - intent: provide_department
+    entities:
+    - course_name: mechanical
+  - action: action_show_eligibility
+
+# UPDATED AND ADDED STORIES FOR BETTER NAME HANDLING:
+- story: handle inquiry with name and entities
+  steps:
+  - intent: request_inquiry
+  - action: utter_ask_user_name
+  - intent: inform_name
+    entities:
+    - user_name: John
+  - action: action_handle_name_response
+  - intent: inform_email
+    entities:
+    - user_email: john@example.com
+  - action: action_handle_email_response
+
+- story: handle inquiry with name without entities
+  steps:
+  - intent: request_inquiry
+  - action: utter_ask_user_name
+  - intent: inform_name
+  - action: action_handle_name_response
+  - intent: inform_email
+  - action: action_handle_email_response
+
+- story: handle name response with entity
+  steps:
+  - intent: inform_name
+    entities:
+    - user_name: Alice
+  - action: action_handle_name_response
+
+- story: handle name response without entity
+  steps:
+  - intent: inform_name
+  - action: action_handle_name_response
+
+- story: handle simple name input after ask
+  steps:
+  - action: utter_ask_user_name
+  - intent: inform_name
+  - action: action_handle_name_response
+
+- story: handle just the name word
+  steps:
+  - action: utter_ask_user_name
+  - intent: inform_name
+    entities:
+    - user_name: Kavya
+  - action: action_handle_name_response
+
+- story: handle name with my name is pattern
+  steps:
+  - action: utter_ask_user_name
+  - intent: inform_name
+  - action: action_handle_name_response
+
+- story: handle email response with entity
+  steps:
+  - intent: inform_email
+    entities:
+    - user_email: alice@example.com
+  - action: action_handle_email_response
+
+- story: handle email response without entity
+  steps:
+  - intent: inform_email
+  - action: action_handle_email_response
+
+- story: handle valid email submission
+  steps:
+  - intent: inform_email
+    entities:
+    - user_email: valid@example.com
+  - action: action_handle_email_response
+  - action: utter_submit_inquiry
+
+- story: handle invalid email then valid
+  steps:
+  - intent: inform_email
+    entities:
+    - user_email: invalid
+  - action: action_handle_email_response
+  - action: utter_invalid_email
+  - intent: inform_email
+    entities:
+    - user_email: valid@example.com
+  - action: action_handle_email_response
+  - action: utter_submit_inquiry
+
+- story: handle inquiry directly
+  steps:
+  - intent: request_inquiry
+  - action: utter_ask_user_name
+
+- story: handle department head inquiry
+  steps:
+  - intent: ask_department_head
+  - action: action_show_department_info
+
+- story: handle fee inquiry
+  steps:
+  - intent: ask_fees
+  - action: utter_ask_inquiry_course
+  - action: action_show_fees
+
+# ADDITIONAL STORIES FOR BETTER COVERAGE:
+- story: handle name then change mind
+  steps:
+  - intent: request_inquiry
+  - action: utter_ask_user_name
+  - intent: inform_name
+    entities:
+    - user_name: Test
+  - action: action_handle_name_response
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: handle email then change mind
+  steps:
+  - intent: request_inquiry
+  - action: utter_ask_user_name
+  - intent: inform_name
+    entities:
+    - user_name: Test
+  - action: action_handle_name_response
+  - intent: inform_email
+    entities:
+    - user_email: test@example.com
+  - action: action_handle_email_response
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: handle direct department head inquiry with entity
+  steps:
+  - intent: ask_department_head
+    entities:
+    - course_name: computer science
+  - action: action_show_department_info

@@ -1,0 +1,199 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - hi there
+    - hello there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - catch you later
+    - see you later
+    - bye bye
+    - take care
+
+- intent: ask_fees
+  examples: |
+    - What are the fees?
+    - How much does it cost?
+    - Tell me about the fee structure
+    - What's the tuition fee?
+    - Fee information
+    - How much for B.Tech?
+    - Cost of the program
+
+- intent: ask_department_info
+  examples: |
+    - Tell me about computer science department
+    - What is electrical engineering about?
+    - Information about mechanical department
+    - Computer science department details
+    - Mechanical engineering information
+    - Civil department overview
+
+- intent: provide_department
+  examples: |
+    - [Computer Science](course_name)
+    - [Electrical](course_name) Engineering
+    - [Mechanical](course_name) department
+    - [Civil](course_name)
+    - [Electronics](course_name)
+    - [Chemical](course_name) Engineering
+
+- intent: ask_bot_info
+  examples: |
+    - What are you?
+    - Are you a bot?
+    - Tell me about yourself
+    - Who are you?
+    - What can you do?
+
+- intent: nlu_fallback
+  examples: |
+    - asdfghjkl
+    - random nonsense
+    - blah blah blah
+    - I don't understand
+    - What does that mean?
+    - Can you explain?
+
+- intent: ask_about_architecture
+  examples: |
+    - How are you built?
+    - What's your architecture?
+    - What technology do you use?
+    - How do you work?
+    - What's your system design?
+
+- intent: ask_eligibility
+  examples: |
+    - What are the eligibility criteria?
+    - Eligibility requirements
+    - What qualifications do I need?
+    - Minimum marks required
+    - Who can apply?
+    - Admission eligibility
+
+- intent: ask_courses
+  examples: |
+    - What courses do you offer?
+    - Which programs are available?
+    - Tell me about your courses
+    - Available programs
+    - What B.Tech programs do you have?
+
+- intent: request_inquiry
+  examples: |
+    - I want to inquire
+    - Please provide more information
+    - I need details
+    - Can you send me information?
+    - I'd like to know more
+
+- intent: ask_curriculum
+  examples: |
+    - What is the curriculum?
+    - B.Tech syllabus
+    - Course structure
+    - What subjects are taught?
+    - Academic curriculum
+
+- intent: ask_duration
+  examples: |
+    - How long is the program?
+    - Program duration
+    - How many years?
+    - Course length
+    - Duration of B.Tech
+
+- intent: ask_deadline
+  examples: |
+    - Application deadline
+    - Last date to apply
+    - When is the last date?
+    - Admission deadline
+    - Closing date for applications
+
+- intent: ask_hostel_facility
+  examples: |
+    - Hostel rooms
+    - Accommodation availability
+    - Room types
+    - Hostel booking
+    - Room facilities
+    - Hostel stay
+    - Living accommodation
+
+- intent: ask_hostel_facilities
+  examples: |
+    - What are the hostel facilities?
+    - Tell me about hostel amenities
+    - Hostel accommodation details
+    - What facilities are in the hostel?
+    - Mess facilities information
+    - Hostel infrastructure
+    - Amenities in hostel
+
+- intent: bot_challenge
+  examples: |
+    - Are you human?
+    - Is this a bot?
+    - Are you real?
+    - Are you a robot?
+    - Are you artificial intelligence?
+
+- intent: inform_name
+  examples: |
+    - My name is [John](user_name)
+    - I am [Alice](user_name)
+    - [Robert](user_name)
+    - Call me [Sarah](user_name)
+    - [Michael](user_name)
+    - [Kavya](user_name)
+    - [Rahul](user_name)
+    - [Priya](user_name)
+    - name is [Raj](user_name)
+    - I'm [Neha](user_name)
+    - it's [Arjun](user_name)
+    - you can call me [Maya](user_name)
+    - just call me [Sam](user_name)
+    - my name is [kavya](user_name)
+    - kavya
+    - my name kavya
+    - i am kavya
+    - this is kavya
+    - call me kavya
+    - you can call me kavya
+
+- intent: inform_email
+  examples: |
+    - My email is [test@example.com](user_email)
+    - Email [user@domain.com](user_email)
+    - [contact@mail.com](user_email)
+    - Send to [me@gmail.com](user_email)
+    - [info@college.edu](user_email)
+
+- intent: ask_department_head
+  examples: |
+    - Who is the head of computer science department?
+    - Department head of electrical
+    - Who leads mechanical department?
+    - Head of civil department
+    - Electronics department head
+
+- intent: ask_prerequisites
+  examples: |
+    - What do I need to apply?
+    - Entry requirements
+    - Qualification needed
+    - Minimum requirements
+    - What are the prerequisites?
